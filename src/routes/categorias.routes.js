@@ -7,6 +7,9 @@ const router = Router();
 router.get("/", categoriaController.getCategorias);
 router.post("/", categoriaController.postCategorias);
 
+/*ruta que recibe un parametro */
+router.get("/:id", categoriaController.getCategory);
+
 
 
 /*Hacemos disponible el router en toda la app */
