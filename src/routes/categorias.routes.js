@@ -4,7 +4,8 @@ import {methodHTTP as categoriaController } from "../controllers/categoria.contr
 const router = Router();
 
 /* configuramos respuesta desde server  metodo http get */
-router.get("/", categoriaController.getCategorias)
+router.get("/", categoriaController.getCategorias);
+router.post("/", categoriaController.postCategorias);
 
 
 
