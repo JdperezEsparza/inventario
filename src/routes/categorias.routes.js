@@ -13,6 +13,9 @@ router.get("/:id", categoriaController.getCategory); /*read*/
 /*ruta que recibe parametro id de categoria a borrar */
 router.delete("/:id", categoriaController.deleteCategory); 
 
+/*ruta que recibe como parametro tanto el cuerpo del id a actualizar*/
+router.put("/:id", categoriaController.updateCategorias); 
+
 
 
 /*Hacemos disponible el router en toda la app */
