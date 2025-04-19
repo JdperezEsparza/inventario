@@ -8,7 +8,10 @@ router.get("/", categoriaController.getCategorias);
 router.post("/", categoriaController.postCategorias);
 
 /*ruta que recibe un parametro */
-router.get("/:id", categoriaController.getCategory);
+router.get("/:id", categoriaController.getCategory); /*read*/
+
+/*ruta que recibe parametro id de categoria a borrar */
+router.delete("/:id", categoriaController.deleteCategory); 
 
 
 
